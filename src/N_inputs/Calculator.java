@@ -21,7 +21,8 @@ public class Calculator {
 	System.out.println("Press 2 for Subtraction");
 	System.out.println("Press 3 for Multiplication");
 	System.out.println("Press 4 for Division");
-	System.out.println("Press 5 for Exit");
+	System.out.println("Press 5 for Evaluating Expression");
+	System.out.println("Press 6 for Exit ");
 	System.out.println("================================");
 	choice=sc.nextInt();
 	
@@ -47,14 +48,19 @@ public class Calculator {
 		div.getResult();
 		break;
 	case 5:
-		System.out.println("You have pressed 5. The program has ended..!!");
+		Evaluation evl=new Evaluation();
+		evl.getResult();
+		break;
+		
+	case 6:
+		System.out.println("You have pressed 6. The program has ended..!!");
 		
 		break;
 	default:
 		System.out.println("Wrong Choice...!!");
 		
 	 }	
-   }while(choice!=5);
+   }while(choice!=6);
  }
 		
 }
