@@ -9,7 +9,7 @@ public class Evaluation {
 	}
 	static int operand(char c)
 	{
-		return (int)(c-'0');
+		return (int)(c);
 	}
 	static int evaluate(String exp)
 	{
